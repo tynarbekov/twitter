@@ -1,7 +1,7 @@
 class TwitterApi
 
 	def self.our_public_tweets
-		client.user_timeline('tynarbekov95')
+		client.user_timeline('realDonaldTrump', count: 15, excude_replies: true)
 	end
 
 

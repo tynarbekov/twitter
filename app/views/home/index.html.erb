@@ -1,0 +1,8 @@
+<% @count = 0 %>
+	<% TwitterApi.our_public_tweets.each do |tweet| %>
+		<p>
+			<%= @count = @count + 1 %>
+			
+			<p><%= tweet.text %></p>
+		</p>
+	<% end %>
